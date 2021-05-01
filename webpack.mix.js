@@ -15,8 +15,5 @@ mix
     .setPublicPath('public/build')
     .setResourceRoot('build')
     .js('resources/js/app.js', 'js')
-    .postCss('resources/css/app.css', 'css', [
-        require('postcss-import'),
-        require('tailwindcss'),
-        require('autoprefixer'),
-]).version();
+    .sass('resources/sass/app.scss', 'css')
+    .version();
