@@ -7,11 +7,18 @@ composer install
 // Production
 composer install --no-dev
 ```
-## Install NPM packages
+## NPM packages
 ```
-npm insall
-npm run dev
+// Install packages
+make assets-install
 
-// Production
-npm run prod
+// Run dev
+make assets-dev
+
+// Run prod
+make assets-prod
+```
+## Tests
+```
+make test
 ```
